@@ -1,0 +1,28 @@
+name: Python Quality
+on: [push, pull_request]
+jobs:
+  py-code-quality:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Setup
+      run: |
+        python -m pip install --upgrade pip
+    - name: Lint with Ruff
+      run: |
+        pip install ruff==0.0.263
+        ruff ./api
+    - name: Lint with black
+      run: |
+        pip install black==23.1.0
+        black ./api --check
+    - name: Typecheck with pyright
+      run: |
+        pip install -r api/requirements.txt
+        pip install pyright==1.1.306
+        prisma generate
+        pyright ./api
