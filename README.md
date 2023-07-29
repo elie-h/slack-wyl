@@ -1,6 +1,19 @@
-# Slack GPT Bot
+# Slack GPT Bot: Wyl 🤖
 
-This repository contains a Python-based Slack GPT Bot that uses OpenAI's GPT model to answer users' questions.
+Hi from Wyl, a Python-based Slack GPT Bot that leverages the power of OpenAI's GPT models to answer user queries in real-time. Primed with a knowledge base of quality tech advice and backed by a vector database, Wyl serves as a helpful resource for developers, especially junior engineers, seeking advice on best practices and technical questions.
+
+Wyl features powerful capabilities such as information retrieval from its modifiable knowledgebase, and summarisation tasks. All these features make Wyl more than just a bot, but a smart assistant that improves productivity and collaboration.
+
+## Key Features 💡
+
+- Group Chats: Wyl seamlessly integrates into your Slack workspace and interacts within group chats.
+- Information Retrieval: Backed by OpenAI's GPT models, Wyl can provide detailed responses to a broad range of technical queries.
+- Modifiable Knowledgebase: Update Wyl's knowledgebase with the latest and most accurate tech advice.
+- Summarisation Tasks: Wyl can summarize lengthy technical documents, making them easier to understand and consume.
+
+The intention of this project is to create a smart assistant for developers, capable of providing sound advice and assistance when it comes to best practices or asking technical questions.
+
+Let's get started with Wyl! ⬇️
 
 ## Installation
 
